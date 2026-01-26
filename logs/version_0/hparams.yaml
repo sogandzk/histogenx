@@ -1,0 +1,19 @@
+batch_size: 32
+dropout1: 0.1
+dropout2: 0.2
+expr_dropout_probs:
+- 0.1
+- 0.2
+expr_hidden_dims:
+- 1024
+- 512
+img_dropout_probs:
+- 0.1
+- 0.2
+img_hidden_dims:
+- 1024
+- 512
+learning_rate: 0.0002487900423269391
+max_epochs: 100
+temperature: 0.19863321992420335
+weight_decay: 0.00528019530634794
