@@ -1,0 +1,26 @@
+# Directories
+data/
+notebooks/
+logs/
+checkpoints/
+# Ignore everything in experiments except optuna.db
+experiments/*
+!experiments/optuna.db
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+.venv/
+env/
+.env
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
