@@ -3,9 +3,6 @@ data/
 notebooks/
 logs/
 checkpoints/
-# Ignore everything in experiments except optuna.db
-experiments/*
-!experiments/optuna.db
 
 # Python
 __pycache__/
