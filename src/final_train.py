@@ -17,11 +17,11 @@ dataset = load_from_disk(os.path.join(PROJECT_DIR, "data", "dataset"))
 optuna_db_path = os.path.join(
     PROJECT_DIR,
     "experiments",
-    "optuna.db"
+    "optuna-V1.db"
 )
 
 study = optuna.load_study(
-    study_name="May_10_2025_A",
+    study_name="May_9_2025_A",
     storage=f"sqlite:///{optuna_db_path}"
 )
 
