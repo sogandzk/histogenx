@@ -19,10 +19,10 @@ def objective(trial, dataset):
     hparams = {
         "max_epochs": 100,
         "k_patches": trial.suggest_categorical("k_patches", [4, 8, 16]),
-        "batch_size": trial.suggest_categorical("batch_size", [32, 64, 128, 256]),
-        "learning_rate": trial.suggest_float("learning_rate", 1e-6, 1e-4, log=True),
-        "weight_decay": trial.suggest_float("weight_decay", 1e-6, 1e-4, log=True),
-        "temperature": trial.suggest_float("temperature", 0.01, 0.3),
+        "batch_size": trial.suggest_categorical("batch_size", [16, 32, 64]), # [32, 64, 128, 256]
+        "learning_rate": trial.suggest_float("learning_rate", 1e-6, 1e-3, log=True), # 1e-6, 1e-4
+        "weight_decay": trial.suggest_float("weight_decay", 1e-6, 1e-3, log=True), # 1e-6, 1e-4
+        "temperature": trial.suggest_float("temperature", 0.05, 0.3), # 0.01, 0.3
         "dropout1": 0.2, #trial.suggest_float("dropout1", 0, 0.6),
         "dropout2": 0.3, #trial.suggest_float("dropout2", 0, 0.6),
         # "img_depth": trial.suggest_categorical("img_depth", ["shallow", "deep"]),
