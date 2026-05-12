@@ -13,7 +13,7 @@ import subprocess
 # ------------------------------------------------------------------------------------------------------------------
 print("Load the main dataset initially containing images")
 
-ds = load_dataset("dakomura/tcga-ut", "internal")
+ds = load_dataset("dakomura/tcga-ut", "external")
 ds_train = ds["train"].filter(lambda x: x["json"]["label"] == "Breast_invasive_carcinoma" and x["__key__"][13:15] == '01' )
 ds_valid = ds["valid"].filter(lambda x: x["json"]["label"] == "Breast_invasive_carcinoma" and x["__key__"][13:15] == '01')
 ds_test = ds["test"].filter(lambda x: x["json"]["label"] == "Breast_invasive_carcinoma" and x["__key__"][13:15] == '01')
