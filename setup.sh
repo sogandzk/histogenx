@@ -7,7 +7,7 @@ pip install optuna optuna-integration[pytorch_lightning]
 mkdir data
 cd data
 
-gdown --fuzzy https://drive.google.com/file/d/1QMjQzndn7ym5zcuaHzKhJcrdMOxvMhgL/view?usp=sharing
+gdown https://drive.google.com/file/d/1kAaQerv-dy7U8RIYayHFyXITdvoG29iV/view?usp=sharing
 
 tar -xzf dataset.tar.gz
 rm dataset.tar.gz
